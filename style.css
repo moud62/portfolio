@@ -1,0 +1,18 @@
+header {
+  height: 55px;
+  background-color: aliceblue;
+}
+
+header a {
+  text-decoration: none;
+  color: black;
+}
+
+header li {
+  list-style-type: none;
+}
+
+#logo {
+  height: 40px;
+  width: 40px;
+}
