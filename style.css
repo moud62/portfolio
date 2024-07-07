@@ -1,3 +1,9 @@
+html,
+body {
+  padding: 0;
+  margin: 0;
+}
+
 header {
   height: 55px;
   background-color: aliceblue;
@@ -114,6 +120,17 @@ header li {
 
 .item-feedbacks {
   height: 200px;
-  width: 400px;
+  width: 500px;
   border: 1px solid black;
+}
+
+#future-client {
+  margin-left: 80px;
+  margin-right: 80px;
+  margin-top: 50px;
+}
+
+footer {
+  background-color: rgb(22, 20, 20);
+  color: white;
 }
