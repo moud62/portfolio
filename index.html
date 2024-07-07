@@ -12,6 +12,10 @@
       crossorigin="anonymous"
     />
     <title>Mamoudou</title>
+    <script
+      src="https://kit.fontawesome.com/71796de5ff.js"
+      crossorigin="anonymous"
+    ></script>
   </head>
   <body>
     <header
@@ -29,19 +33,144 @@
         <li><a href="#">Contact</a></li>
       </ul>
 
-      <div class="me-3">
+      <div
+        id="btn-discuter"
+        class="me-3 d-flex justify-content-center align-items-center"
+      >
         <a href="#">Discuter</a>
       </div>
     </header>
     <div class="d-flex justify-content-between align-items-center px-5 mx-5">
       <div class="d-flex flex-column justify-content-center gap-5">
-        <h1>
+        <p id="nom">
           Salut, Je suis Mamoudou <br />
           <span>Développeur Fullstack</span>
-        </h1>
-        <div><a href="#">Voir mes projets</a></div>
+        </p>
+        <div class="d-flex justify-content-start gap-5 align-items-center">
+          <div
+            id="btn-projets"
+            class="d-flex justify-content-center align-items-center me-4"
+          >
+            <a href="#">Voir mes projets</a>
+          </div>
+          <div class="d-flex justify-content-center gap-4">
+            <a href=""><i class="fa-brands fa-facebook fa-2x"></i></a>
+            <a href=""><i class="fa-brands fa-instagram fa-2x"></i></a>
+            <a href=""><i class="fa-brands fa-github fa-2x"></i></a>
+            <a href=""><i class="fa-brands fa-youtube fa-2x"></i></a>
+          </div>
+        </div>
       </div>
       <img src="images/mamoudou.png" alt="Ma photo" />
+    </div>
+    <h3 class="w-75" id="intro">
+      Je suis Mamoudou Diallo, développeur full stack et étudiant en Licence 3
+      d'Informatique en Guinée. Je crée des solutions web et mobiles innovantes
+      grâce à ma passion et mon expérience.
+    </h3>
+    <div
+      class="d-flex justify-content-between align-items-center"
+      id="description"
+    >
+      <div class="col-5">
+        <p>
+          Je suis un développeur full stack en Guinée, actuellement en Licence 3
+          d'Informatique. Passionné par la création de solutions web et mobiles,
+          j'ai acquis une solide expérience dans divers projets.
+        </p>
+        <p>
+          Toujours en quête de nouveaux défis, j'aime explorer et maîtriser les
+          dernières technologies pour offrir des produits de qualité.
+        </p>
+      </div>
+      <div class="col-5 d-flex flex-column gap-2 mb-3">
+        <h4 class="text-center">Mes compétences</h4>
+        <div class="d-flex flex-column justify-content-around gap-4">
+          <div
+            class="d-flex flex-column justify-content-center gap-2 align-items-center"
+          >
+            <div class="d-flex w-100 justify-content-between">
+              <span>Javascript</span> <span>80%</span>
+            </div>
+            <div class="progress-bar">
+              <div class="progress-value col-10"></div>
+            </div>
+          </div>
+          <div
+            class="d-flex flex-column justify-content-center gap-2 align-items-center"
+          >
+            <div class="d-flex w-100 justify-content-between">
+              <span>Angular</span> <span>75%</span>
+            </div>
+            <div class="progress-bar">
+              <div class="progress-value col-9"></div>
+            </div>
+          </div>
+          <div
+            class="d-flex flex-column justify-content-center gap-2 align-items-center"
+          >
+            <div class="d-flex w-100 justify-content-between">
+              <span>Java (Spring boot)</span> <span>60%</span>
+            </div>
+            <div class="progress-bar">
+              <div class="progress-value col-8"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="services">
+      <h3 class="mb-3">Mes services</h3>
+      <div class="w-100 d-flex justify-content-between align-items-center">
+        <div
+          class="item-service d-flex flex-column align-items-center justify-content-around"
+        >
+          <i class="fa-solid fa-laptop-code fa-3x"></i>
+          <h4 class="text-center">Développement web</h4>
+          <p class="text-center">
+            Je foournit des services des services de développement web pour
+            particuliers et les entreprises
+          </p>
+        </div>
+        <div
+          class="item-service d-flex flex-column align-items-center justify-content-around"
+        >
+          <i class="fa-solid fa-mobile-screen fa-3x"></i>
+          <h4 class="text-center">Développement Mobile</h4>
+          <p class="text-center">
+            Vous avez besoin d'une application mobile pour digitaliser votre
+            activité alors je peux vous aider
+          </p>
+        </div>
+        <div
+          class="item-service d-flex flex-column align-items-center justify-content-around"
+        >
+          <i class="fa-solid fa-shop fa-3x"></i>
+          <h4 class="text-center">E-Commerce</h4>
+          <p class="text-center">
+            je peux créer des sites e-commerce un design fluid et intuitif pour
+            boutique de commerce
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div id="projets">
+      <h3 class="mb-3">Mes Projets</h3>
+      <div class="d-flex justify-content-around">
+        <div class="item-projets">
+          <h4 class="text-center">TheGit</h4>
+          <div class="btn-plus">
+            <span class="m-auto text-center">En savoir plus</span>
+          </div>
+        </div>
+        <div class="item-projets">
+          <h4 class="text-center">Smartstore</h4>
+          <div class="btn-plus">
+            <span class="m-auto text-center">En savoir plus</span>
+          </div>
+        </div>
+      </div>
     </div>
   </body>
 </html>

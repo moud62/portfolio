@@ -16,3 +16,104 @@ header li {
   height: 40px;
   width: 40px;
 }
+
+#nom {
+  font-size: 60px;
+  font-weight: 500;
+}
+
+#btn-projets {
+  height: 60px;
+  width: 200px;
+  border: 1px solid black;
+}
+
+#btn-projets a {
+  text-decoration: none;
+}
+
+#btn-discuter {
+  height: 40px;
+  width: 100px;
+  border: 1px solid black;
+}
+
+#intro {
+  margin-left: 80px;
+  margin-top: 40px;
+}
+
+#description {
+  margin-left: 80px;
+  margin-top: 50px;
+  margin-right: 80px;
+  font-size: large;
+}
+
+.progress-bar {
+  height: 10px;
+  width: 100%;
+  border: 1px solid black;
+  border-radius: 20px;
+}
+
+.progress-value {
+  height: 10px;
+  border-radius: 20px;
+  background-color: black;
+}
+
+#services {
+  margin-left: 80px;
+  margin-right: 80px;
+  margin-top: 50px;
+}
+
+.item-service {
+  height: 225px;
+  width: 375px;
+  border: 1px solid black;
+}
+
+#projets {
+  margin-left: 80px;
+  margin-right: 80px;
+  margin-top: 50px;
+}
+
+.item-projets {
+  height: 180px;
+  width: 400px;
+  border: 1px solid black;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.btn-plus {
+  height: 40px;
+  width: 150px;
+  border: 1px solid black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.client-profie {
+  height: 60px;
+  width: 60px;
+  border-radius: 50%;
+}
+
+#feedbacks {
+  margin-left: 80px;
+  margin-right: 80px;
+  margin-top: 50px;
+}
+
+.item-feedbacks {
+  height: 200px;
+  width: 400px;
+  border: 1px solid black;
+}
