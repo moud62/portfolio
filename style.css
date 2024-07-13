@@ -1,17 +1,37 @@
-html,
+@import url("bootstrap.css");
+
 body {
-  padding: 0;
-  margin: 0;
+  background-color: var(--bs-light);
+  color: var(--bs-dark);
+}
+
+.btn {
+  border-radius: 0;
+}
+
+.card {
+  border-radius: 0;
+}
+
+.card {
+  border: 1px solid var(--dark);
+}
+
+i {
+  color: var(--bs-primary);
+}
+
+i:hover {
+  color: var(--gray);
 }
 
 header {
   height: 55px;
-  background-color: aliceblue;
+  background-color: var(--light);
 }
 
 header a {
   text-decoration: none;
-  color: black;
 }
 
 header li {
@@ -31,7 +51,6 @@ header li {
 #btn-projets {
   height: 60px;
   width: 200px;
-  border: 1px solid black;
 }
 
 #btn-projets a {
@@ -41,7 +60,6 @@ header li {
 #btn-discuter {
   height: 40px;
   width: 100px;
-  border: 1px solid black;
 }
 
 #intro {
@@ -56,17 +74,8 @@ header li {
   font-size: large;
 }
 
-.progress-bar {
+.progress {
   height: 10px;
-  width: 100%;
-  border: 1px solid black;
-  border-radius: 20px;
-}
-
-.progress-value {
-  height: 10px;
-  border-radius: 20px;
-  background-color: black;
 }
 
 #services {
@@ -78,7 +87,7 @@ header li {
 .item-service {
   height: 225px;
   width: 375px;
-  border: 1px solid black;
+  border: 2px solid var(--bs-primary);
 }
 
 #projets {
@@ -90,20 +99,11 @@ header li {
 .item-projets {
   height: 180px;
   width: 400px;
-  border: 1px solid black;
+  border: 2px solid var(--bs-primary);
   display: flex;
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
-}
-
-.btn-plus {
-  height: 40px;
-  width: 150px;
-  border: 1px solid black;
-  display: flex;
-  align-items: center;
-  justify-content: center;
 }
 
 .client-profie {
@@ -120,8 +120,8 @@ header li {
 
 .item-feedbacks {
   height: 200px;
-  width: 500px;
-  border: 1px solid black;
+  width: 600px;
+  border: 1px solid var(--bs-primary);
 }
 
 #future-client {
@@ -131,6 +131,17 @@ header li {
 }
 
 footer {
-  background-color: rgb(22, 20, 20);
-  color: white;
+  height: 70px;
+  background-color: var(--bs-secondary);
+  color: var(--bs-light);
+  margin-top: auto;
+  margin-bottom: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+.footer-contact {
+  margin-top: 213px;
 }
