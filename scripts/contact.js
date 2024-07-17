@@ -27,4 +27,17 @@ if (screen.width <= 740) {
     champ.classList.remove("col-5");
     champ.classList.add("w-100");
   });
+
+  let navBar = document.querySelector("#nav-bar");
+
+  let menuIcon = document.querySelector(".fa-bars");
+  menuIcon.classList.remove("d-none");
+  menuIcon.addEventListener("click", () => {
+    navBar.classList.remove("d-none");
+  });
+
+  let closeBtn = document.querySelector("#close-btn");
+  closeBtn.addEventListener("click", () => {
+    navBar.classList.add("d-none");
+  });
 }

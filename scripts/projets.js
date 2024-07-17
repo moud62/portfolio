@@ -18,4 +18,17 @@ if (screen.width <= 740) {
   let menuBtn = document.querySelector(".fa-bars");
   menuBtn.classList.remove("d-none");
   menuBtn.classList.add("d-block");
+
+  let navBar = document.querySelector("#nav-bar");
+
+  let menuIcon = document.querySelector(".fa-bars");
+  menuIcon.classList.remove("d-none");
+  menuIcon.addEventListener("click", () => {
+    navBar.classList.remove("d-none");
+  });
+
+  let closeBtn = document.querySelector("#close-btn");
+  closeBtn.addEventListener("click", () => {
+    navBar.classList.add("d-none");
+  });
 }
