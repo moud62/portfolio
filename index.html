@@ -3,56 +3,42 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="style.css" />
     <link rel="shortcut icon" href="images/logo.png" type="image/x-icon" />
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
-      crossorigin="anonymous"
-    />
     <title>Mamoudou</title>
     <script
       src="https://kit.fontawesome.com/71796de5ff.js"
       crossorigin="anonymous"
     ></script>
+    <link rel="stylesheet" href="style.css" />
   </head>
   <body>
     <header
       class="w-100 d-flex justify-content-between align-items-center px-2"
     >
+      <i class="fa-solid fa-bars fa-2x d-none"></i>
       <img id="logo" src="images/logo.png" alt="Mon logo" />
 
-      <ul
-        class="d-flex justify-content-center align-items-center gap-4 m-0 p-0"
+      <div>
+        <ul
+        class="nav nav-pills d-flex justify-content-center align-items-center  m-0 p-0"
       >
-        <li><a href="#">Accueil</a></li>
-        <li><a href="#">Projets</a></li>
-        <li><a href="#">Services</a></li>
-        <li><a href="#">A propos</a></li>
-        <li><a href="#">Contact</a></li>
+        <li><a class="nav-link active" href="#">Accueil</a></li>
+        <li><a class="nav-link" href="projets.html">Projets</a></li>
+        <li><a class="nav-link" href="services.html">Services</a></li>
+        <li><a class="nav-link" href="apropos.html">A propos</a></li>
+        <li><a class="nav-link" href="contact.html">Contact</a></li>
       </ul>
-
-      <div
-        id="btn-discuter"
-        class="me-3 d-flex justify-content-center align-items-center"
-      >
-        <a href="#">Discuter</a>
       </div>
+      <a class="btn btn-outline-primary btn-md" href="#">Discuter</a>
     </header>
-    <div class="d-flex justify-content-between align-items-center px-5 mx-5">
+    <div id="md" class=" d-flex justify-content-between flex-wrap align-items-center px-5 mx-5">
       <div class="d-flex flex-column justify-content-center gap-5">
         <p id="nom">
           Salut, Je suis Mamoudou <br />
-          <span>Développeur Fullstack</span>
+          <span class="text-primary">Développeur Fullstack</span>
         </p>
-        <div class="d-flex justify-content-start gap-5 align-items-center">
-          <div
-            id="btn-projets"
-            class="d-flex justify-content-center align-items-center me-4"
-          >
-            <a href="#">Voir mes projets</a>
-          </div>
+        <div class="d-flex justify-content-start gap-5 align-items-center flex-wrap">
+          <a class="btn btn-outline-primary btn-lg" href="#">Voir mes projets</a>
           <div class="d-flex justify-content-center gap-4">
             <a href=""><i class="fa-brands fa-facebook fa-2x"></i></a>
             <a href=""><i class="fa-brands fa-instagram fa-2x"></i></a>
@@ -61,7 +47,7 @@
           </div>
         </div>
       </div>
-      <img src="images/mamoudou.png" alt="Ma photo" />
+      <img id="profile" src="images/mamoudou.png" alt="Ma photo" />
     </div>
     <h3 class="w-75" id="intro">
       Je suis Mamoudou Diallo, développeur full stack et étudiant en Licence 3
@@ -69,10 +55,10 @@
       grâce à ma passion et mon expérience.
     </h3>
     <div
-      class="d-flex justify-content-between align-items-center"
+      class="d-flex justify-content-between align-items-center flex-wrap"
       id="description"
     >
-      <div class="col-5">
+      <div id="desc" class="col-5">
         <p>
           Je suis un développeur full stack en Guinée, actuellement en Licence 3
           d'Informatique. Passionné par la création de solutions web et mobiles,
@@ -83,7 +69,7 @@
           dernières technologies pour offrir des produits de qualité.
         </p>
       </div>
-      <div class="col-5 d-flex flex-column gap-2 mb-3">
+      <div id="compt" class="col-5 d-flex flex-column gap-2 mb-3">
         <h4 class="text-center">Mes compétences</h4>
         <div class="d-flex flex-column justify-content-around gap-4">
           <div
@@ -92,8 +78,15 @@
             <div class="d-flex w-100 justify-content-between">
               <span>Javascript</span> <span>80%</span>
             </div>
-            <div class="progress-bar">
-              <div class="progress-value col-10"></div>
+            <div class="progress w-100">
+              <div
+                class="progress-bar"
+                role="progressbar"
+                style="width: 80%"
+                aria-valuenow="25"
+                aria-valuemin="0"
+                aria-valuemax="100"
+              ></div>
             </div>
           </div>
           <div
@@ -102,8 +95,15 @@
             <div class="d-flex w-100 justify-content-between">
               <span>Angular</span> <span>75%</span>
             </div>
-            <div class="progress-bar">
-              <div class="progress-value col-9"></div>
+            <div class="progress w-100">
+              <div
+                class="progress-bar"
+                role="progressbar"
+                style="width: 75%"
+                aria-valuenow="25"
+                aria-valuemin="0"
+                aria-valuemax="100"
+              ></div>
             </div>
           </div>
           <div
@@ -112,16 +112,23 @@
             <div class="d-flex w-100 justify-content-between">
               <span>Java (Spring boot)</span> <span>60%</span>
             </div>
-            <div class="progress-bar">
-              <div class="progress-value col-8"></div>
+            <div class="progress w-100">
+              <div
+                class="progress-bar"
+                role="progressbar"
+                style="width: 60%"
+                aria-valuenow="25"
+                aria-valuemin="0"
+                aria-valuemax="100"
+              ></div>
             </div>
           </div>
         </div>
       </div>
     </div>
     <div id="services">
-      <h3 class="mb-3">Mes services</h3>
-      <div class="w-100 d-flex justify-content-between align-items-center">
+      <h3 class="mb-3 text-dark">Mes services</h3>
+      <div class="d-flex justify-content-between align-items-center flex-wrap">
         <div
           class="item-service d-flex flex-column align-items-center justify-content-around"
         >
@@ -156,25 +163,23 @@
     </div>
 
     <div id="projets">
-      <h3 class="mb-3">Mes Projets</h3>
-      <div class="d-flex justify-content-around">
-        <div class="item-projets">
+      <h3 class="mb-3 text-dark">Mes Projets</h3>
+      <div class="projets-container d-flex justify-content-around align-items-center flex-wrap">
+        <div class="item-projets d-flex flex-column justify-content-center gap-3 align-items-center">
           <h4 class="text-center">TheGit</h4>
-          <div class="btn-plus">
-            <span class="m-auto text-center">En savoir plus</span>
-          </div>
+          <a class="btn btn-outline-info" href="#">En savoir plus</a>
         </div>
-        <div class="item-projets">
+        <div class="item-projets d-flex flex-column justify-content-center gap-3 align-items-center">
           <h4 class="text-center">Smartstore</h4>
-          <div class="btn-plus">
-            <span class="m-auto text-center">En savoir plus</span>
+          
+            <a class="btn btn-outline-info" href="#">En savoir plus</a>
           </div>
         </div>
       </div>
     </div>
 
     <div id="feedbacks">
-      <h3 class="mb-3">Ce que les clients disent</h3>
+      <h3 class="mb-3 text-dark">Ce que les clients disent</h3>
       <div class="d-flex justify-content-around align-items-center">
         <i class="fa-solid fa-chevron-left fa-3x"></i>
         <div
@@ -200,32 +205,12 @@
           </div>
         </div>
 
-        <div
-          class="item-feedbacks"
-          class="d-flex flex-column align-items-center justify-content-center"
-        >
-          <p class="mx-3 mt-2">
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-            Perspiciatis dolorum odit laudantium, autem quod dolores, cum porro
-            esse aliquid eaque, consequatur ducimus perferendis natus nobis
-            reiciendis vel voluptate est repellendus?
-          </p>
-          <div
-            class="d-flex justify-content-start gap-2 align-items-center mx-3"
-          >
-            <img class="client-profie" src="images/myPicture.jpg" alt="" />
-            <div
-              class="d-flex flex-column align-items-start justify-content-center"
-            >
-              <h5 class="m-0">Diallo Boubacar</h5>
-              <span>Entrepreneur</span>
-            </div>
-          </div>
-        </div>
+        
         <i class="fa-solid fa-chevron-right fa-3x"></i>
       </div>
     </div>
 
+ 
     <div id="future-client">
       <h3>
         Avez-vous un projet? <span><a href="#">Contactez-moi</a></span>
@@ -235,11 +220,14 @@
         n'hesiter pas à me <a href="#">contacter</a>
       </p>
     </div>
-    <footer class="mt-5 mb-0 p-0">
-      <p class="text-center">
-        copyright &copy; Tous drots reservés | Ce site est réalisé par Mamoudou
+    <footer
+      class="mt-5 mb-0 p-0 d-flex flex-column justify-content-center align-items-center"
+    >
+      <span class="text-center">
+        Copyright &copy; Tous drots reservés | Ce site est réalisé par Mamoudou
         Diallo
-      </p>
+      </span>
     </footer>
+    <script src="index.js" defer></script>
   </body>
 </html>

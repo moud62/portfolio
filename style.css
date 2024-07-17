@@ -100,10 +100,6 @@ header li {
   height: 180px;
   width: 400px;
   border: 2px solid var(--bs-primary);
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-  align-items: center;
 }
 
 .client-profie {
@@ -144,4 +140,81 @@ a {
 
 .footer-contact {
   margin-top: 213px;
+}
+
+@media screen and (max-width: 740px) {
+  #description {
+    width: 90%;
+    margin-left: 20px;
+  }
+
+  #nom {
+    font-size: 40px;
+    margin-top: 100px;
+    padding: 0;
+    text-align: left;
+    margin-left: 20;
+    width: 100%;
+  }
+
+  #md {
+    margin-left: 20px;
+  }
+
+  header > div {
+    display: none;
+  }
+
+  #profile {
+    width: 80%;
+    padding: 0;
+  }
+
+  .item-projets {
+    width: 100%;
+    margin-left: 0;
+    margin-right: 0;
+    margin-bottom: 10px;
+  }
+
+  #projets {
+    width: 90%;
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+
+  #services {
+    width: 90%;
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+
+  .item-service {
+    width: 100%;
+    margin-left: 0;
+    margin-right: 0;
+    margin-bottom: 10px;
+  }
+
+  #intro {
+    margin-left: 20px;
+  }
+
+  #compt {
+    width: 100%;
+  }
+
+  #feedbacks {
+    width: 90%;
+    margin-left: 20px;
+  }
+
+  .item-feedbacks {
+    height: max-content;
+  }
+
+  #future-client {
+    width: 100;
+    margin-left: 20px;
+  }
 }
